@@ -22,16 +22,16 @@
 */	 
 ListNode* removeNthFromEnd(ListNode* head, int n)
 {
-	if(head==NULL || n<0)
+	if(head==NULL || n<1)
 		return NULL;
 	ListNode* fast=head;
 	ListNode* slow=head;	
 	
 	for(int i=0;i<n;i++)//快指针先走 n 步
 		fast=fast->next;
-	if(fast==NULL)//n刚好为链表长度，倒数第 n 个即为第一个节点（头节点）
+	if(fast==NULL)// n 刚好为链表长度，倒数第 n 个即为第一个节点（头节点）
 		return head->next;
-	while(fast->next)
+	while(fast->next!=NULL)
 	{
 		fast = fast->next;//快慢指针一起走到最后
 		slow = slow->next;
