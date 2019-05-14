@@ -6,7 +6,7 @@
 * 并且它们的每个节点只能存储 一位 数字。
 */
 
-
+ListNode
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)
 {
 	if(l1==NULL)
