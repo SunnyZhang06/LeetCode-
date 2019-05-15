@@ -18,7 +18,7 @@
 *
 * 然后把 cur 更新为 node1，重复这个过程就可以了。
 *                      cur	 node1	 node2	rear
-*			dummy——————>2——————>1——————>3————>4————>。。。
+*		      dummy——————>2——————>1——————>3————>4————>。。。
 * 
 */
 ListNode* swapPairs(ListNode* head) 
