@@ -24,7 +24,7 @@ ListNode* deleteDuplicates(ListNode* head)
 			p->next = q->next;
 			q = p->next;
 		}
-		else//不想等则继续往下遍历
+		else//不相等则指针后移
 		{
 			p=q;
 			q=q->next;
