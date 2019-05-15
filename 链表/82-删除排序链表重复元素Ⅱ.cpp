@@ -46,8 +46,8 @@ ListNode* deleteDuplicates(ListNode* head)
 *	dummy————>1————>2————>2—————>3————>4————>。。。
 *	  |       |     |     |
 *	 pre     head   |     |
-*			  |     |     |
-*            pre   cur  cur->next
+*		  |     |     |
+*                pre   cur  cur->next
 */
 ListNode* deleteDuplicates(ListNode* head)
 {
