@@ -61,7 +61,7 @@ ListNode* deleteDuplicates(ListNode* head)
 	{
 		ListNode* cur=pre->next;
 		while(cur->next && cur->val==cur->next->val)
-			cur=cur->next;//cur 最后为不含重复元素的节点，如图中例子，循环结束后cur指向节点3
+			cur=cur->next;// cur 最后指向重复元素中最后一个的节点，如图中例子，循环结束后cur指向最后一个节点2
 		if(cur!=pre->next)//不等说明 cur 已经后移，遇到重复元素
 			pre->next=cur->next;
 		else
