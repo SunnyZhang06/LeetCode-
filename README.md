@@ -4,7 +4,7 @@
 
 ### 数据结构相关 
 
-- 链表
+- [链表](https://github.com/SunnyZhang06/LeetCode-solution-by-classification/tree/master/%E9%93%BE%E8%A1%A8)
 - 栈和队列
 - 树、二叉树、BST
 - 字符串
