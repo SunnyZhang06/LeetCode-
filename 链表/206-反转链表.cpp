@@ -45,6 +45,7 @@ ListNode* reverseList(ListNode* head)
 	}
 	return newHead;	
 }
+
 /*使用辅助头节点*/
 ListNode* reverseList(ListNode* head) 
 {
@@ -65,6 +66,7 @@ ListNode* reverseList(ListNode* head)
 * 方法3：递归法
 * 思路：不断的进入递归函数，直到head指向倒数第二个节点
 */
+
 ListNode* reverseList(ListNode* head)
 {
 	if(head==NULL || head->next==NULL)
