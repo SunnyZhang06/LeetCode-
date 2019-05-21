@@ -1,6 +1,6 @@
 ### 链表类题型常见方法
-- 双指针
-- 辅助头结点
+- 双指针（两个指针）、双重指针（指向指针的指针）
+- 辅助头节点
 - 快慢指针
 
 ### 目录
@@ -15,9 +15,9 @@
 - [141-环形链表](https://github.com/SunnyZhang06/LeetCode-solution-by-classification/blob/master/%E9%93%BE%E8%A1%A8/141-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.cpp)（easy 快慢指针）
 - [142-环形链表Ⅱ](https://github.com/SunnyZhang06/LeetCode-solution-by-classification/blob/master/%E9%93%BE%E8%A1%A8/142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8%E2%85%A1.cpp)（medium 快慢指针）
 - [143-重排链表](https://github.com/SunnyZhang06/LeetCode-solution-by-classification/blob/master/%E9%93%BE%E8%A1%A8/143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8.cpp)（medium 快慢指针）
-- [160-相交链表]()（easy 双指针）
-- [203-移除链表元素]()（easy 辅助头节点、双重指针）
-- [206-翻转链表]()（easy 原地翻转、头插法翻转）
-- [234-回文链表]()（easy 快慢指针、翻转链表）
-- [237-删除链表中的结点]()（easy 覆盖节点）
-- [876-链表的中间结点]()（easy 快慢指针）
+- [160-相交链表](https://github.com/SunnyZhang06/LeetCode-solution-by-classification/blob/master/%E9%93%BE%E8%A1%A8/160-%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8.cpp)（easy 双指针）
+- [203-移除链表元素](https://github.com/SunnyZhang06/LeetCode-solution-by-classification/blob/master/%E9%93%BE%E8%A1%A8/203-%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0.cpp)（easy 辅助头节点、双重指针）
+- [206-翻转链表](https://github.com/SunnyZhang06/LeetCode-solution-by-classification/blob/master/%E9%93%BE%E8%A1%A8/206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.cpp)（easy 原地翻转、头插法翻转）
+- [234-回文链表](https://github.com/SunnyZhang06/LeetCode-solution-by-classification/blob/master/%E9%93%BE%E8%A1%A8/234-%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.cpp)（easy 快慢指针、翻转链表）
+- [237-删除链表中的结点](https://github.com/SunnyZhang06/LeetCode-solution-by-classification/blob/master/%E9%93%BE%E8%A1%A8/237-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9.cpp)（easy 覆盖节点）
+- [876-链表的中间结点](https://github.com/SunnyZhang06/LeetCode-solution-by-classification/blob/master/%E9%93%BE%E8%A1%A8/876-%E9%93%BE%E8%A1%A8%E7%9A%84%E4%B8%AD%E9%97%B4%E8%8A%82%E7%82%B9.cpp)（easy 快慢指针）
