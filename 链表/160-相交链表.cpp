@@ -10,7 +10,6 @@
 * 思路：分别计算出两个链表的长度L1和L2，然后让指向较长链表的指针先走（L1-L2）步，然后让两指针再同时走，相遇的地方就是相交的起始节点
 */
 
-
 ListNode *getIntersectionNode(ListNode *headA, ListNode *headB)
 {
 	if(headA==NULL || headB==NULL)
@@ -50,7 +49,6 @@ int GetLength(ListNode* head)
 	}
 	return cnt;
 }
-
 
 /*
 * 方法1：链表成环思想
