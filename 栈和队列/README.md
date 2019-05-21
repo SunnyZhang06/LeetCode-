@@ -1,6 +1,7 @@
 ### 栈和队列相关知识
 - 性质：栈---先进后出、队列---先进先出
 - 操作：栈---S.empty()、S.top()、S.pop()、S.push(x)、S.size();
+
        队列---Q.empty()、Q.front()、Q.back()、Q.pop()、Q.push(x)、Q.size()
 - 应用：括号匹配、表达式求值、层次遍历
        
