@@ -32,11 +32,11 @@ int perop(int a,int b, string op)
 	if(op="+")
 		return a+b;
 	else if(op=="-")
-        return a-b;
-    else if(op=="*")
-        return a*b;//乘除法注意顺序
-    else if(op=="/")
-        return a/b;
+        	return a-b;
+    	else if(op=="*")
+        	return a*b;//乘除法注意顺序
+    	else if(op=="/")
+        	return a/b;
 	return 0；
 }
 
