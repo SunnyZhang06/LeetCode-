@@ -5,7 +5,7 @@
 - Container 必须是用数组实现的容器，比如 vector, deque 但不能用 list.
 - STL里面默认用的是 vector ,比较方式默认用 operator< , 所以如果你把后面俩个参数缺省的话，优先队列就是**大顶堆**，队头元素最大。
 
-如果要用到小顶堆，则一般要把模板的三个参数都带进去。STL里面定义了一个仿函数 greater<>，对于基本数据类型可以用这个仿函数声明小顶堆：`riority_queue(int, vector<int>, greater<int>) q;`
+如果要用到**小顶堆**，则一般要把模板的三个参数都带进去。STL里面定义了一个仿函数 greater<>，对于基本数据类型可以用这个仿函数声明小顶堆：`priority_queue(int, vector<int>, greater<int>) q;`
 
 对于自定义类型，则必须自己重载 operator< 或者自己写仿函数(自定义比较方式)
 ```
