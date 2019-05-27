@@ -37,9 +37,9 @@ struct cmp
 
 priority_queue<Node, vector<Node>, cmp> q;
 ```
-参考文章：
-1、[https://www.cnblogs.com/Fresh--air/p/6705878.html]https://www.cnblogs.com/Fresh--air/p/6705878.html
-2、[https://www.cnblogs.com/flyoung2008/articles/2136485.html]https://www.cnblogs.com/flyoung2008/articles/2136485.html
+**参考文章：**<br></br>
+1、[https://www.cnblogs.com/Fresh--air/p/6705878.html](https://www.cnblogs.com/Fresh--air/p/6705878.html)
+2、[https://www.cnblogs.com/flyoung2008/articles/2136485.html](https://www.cnblogs.com/flyoung2008/articles/2136485.html)
 
 ### 目录
 - [23-合并K个排序链表](https://github.com/SunnyZhang06/LeetCode-solution-by-classification/blob/master/%E9%93%BE%E8%A1%A8/2-%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0.cpp)（medium  辅助头节点）
