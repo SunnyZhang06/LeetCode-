@@ -38,7 +38,7 @@ struct cmp
 priority_queue<Node, vector<Node>, cmp> q;
 ```
 **参考文章：**<br></br>
-1、[https://www.cnblogs.com/Fresh--air/p/6705878.html](https://www.cnblogs.com/Fresh--air/p/6705878.html)
+1、[https://www.cnblogs.com/Fresh--air/p/6705878.html](https://www.cnblogs.com/Fresh--air/p/6705878.html)<br></br>
 2、[https://www.cnblogs.com/flyoung2008/articles/2136485.html](https://www.cnblogs.com/flyoung2008/articles/2136485.html)
 
 ### 目录
