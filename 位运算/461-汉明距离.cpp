@@ -6,26 +6,16 @@
 */	
 
 /*
-* 思路1：和231中判断2的幂提到方法一样，不停除以4，看结果是否为1。
+* 思路1：取出每一位，然后异或(相同为1，不同为0)，根据异或结果来使计数变量加1.
 */
 
 int hammingDistance(int x, int y)
 {
-	//取出每一位，然后异或
 	int cnt=0;
 	for(int i=0;i<32;i++)
 	{
 		if((x&(1<<i)) ^ (y&(1<<i)))
 			cnt++;		
-	}
-	return cnt;
-
-	//也可以直接异或，然后统计1的个数
-	int cnt=0,ex=x^y;
-	while(ex)
-	{
-		ex=ex&(ex-1);
-		cnt++;
 	}
 	return cnt;
 }
