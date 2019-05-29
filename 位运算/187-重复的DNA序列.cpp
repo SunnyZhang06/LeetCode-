@@ -20,7 +20,7 @@ vector<string> findRepeatedDnaSequences(string s)
 		cur = cur<<2 | m[s[i]];//先把前9个字符对应的编码读进来
 	for(int i=9;i<s.size();++i)
 	{
-		cur = ((cur&0x3ffff)<<2) | (m[s[i]]);//先取出之前编码的后18位(9个字符)，然后每次读进来一个新的字符，把其2位编码加到cur后面，这样共20位，判断其是否出现
+		cur = ((cur&0x3ffff)<<2) | (m[s[i]]);//先取出之前编码的后18位(9个字符)，然后每次读进来一个新的字符，把其2位编码加到cur后面，这样共20位。
 		if(st.count(cur))
 			res.insert(s.substr(i-9,10));
 		else
