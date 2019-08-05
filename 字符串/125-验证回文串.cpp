@@ -39,7 +39,7 @@ bool isPalindrome(string s)
 	{
 		if(!isalnum(s[i]))//如果是空格和标点则删除
 		{
-			str.erase(i,1);
+			s.erase(i,1);
 			i--;
 		}	
 		else if(s[i]>='A'&& s[i]<='Z')//如果是大写则转换为小写
