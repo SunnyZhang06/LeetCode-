@@ -43,7 +43,7 @@ int countSegments(string s)
 		if(s[i]==''||s[i]==',')
 			continue;
 		res++;
-		while(i<n && s[i]!='')
+		while(i<s.size() && s[i]!='')
 			++i;
 	}
 	return res;
