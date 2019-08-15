@@ -55,7 +55,7 @@ string reverseWords(string s)
 *   每次只能过一个空格字符，如果有多个空格字符连在一起，那么t会赋值为空字符串，所以我们在处理t的时候首先要判断其是否为空，是的话直接跳过
 */
 
-void reverseWords(string &s) 
+string reverseWords(string s) 
 {
 	istringstream is(s);
 	s = "";
