@@ -12,15 +12,10 @@
 
 void reverseString(vector<char>& s)
 {
-	int size=s.size();
-	int p1=0,p2=size-1;
+	int left=0,right=s.size()-1;
 	
-	while(p1<p2)
-	{
-		swap(s[p1],s[p2]);
-		p1++;
-		p2--;
-	}
+	while(left<right)
+		swap(s[left++],s[right--]);
 }
 
 /*另外一种写法*/
@@ -29,10 +24,7 @@ void reverseString(vector<char>& s)
 	int len = s.size();
 	int j = len - 1;
 	for (int i = 0; i < len / 2; i++)
-	{
-		swap(s[i], s[j]);
-		j--;
-	}
+		swap(s[i], s[j--]);
 }
 
 
