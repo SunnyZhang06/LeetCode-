@@ -9,11 +9,11 @@
   - 链表法
 
 3、C++中的关联式容器
-  - map、set——根据元素键值自动排序，不允许有相同的键值，底层红黑树（RBTree）实现
-  - multiset、multimap——允许键值重复，底层红黑树（RBTree）实现
-  - unorderedmap、unorderedset——不排序，底层哈希表（hashtable）实现
+  - map、set——根据元素键值自动排序，不允许有相同的键值，**底层红黑树（RBTree）实现**
+  - multiset、multimap——允许键值重复，**底层红黑树（RBTree）实现**
+  - unorderedmap、unorderedset——不自动排序，**底层哈希表（hashtable）实现**
 
-4、编程题中遇到的问题大多可以转化为**建立元素和出现位置或次数**的映射关系 
+4、编程题中遇到的问题大多可以转化为 **建立元素到元素出现位置或次数** 的映射关系 
 
 ### 目录
 
