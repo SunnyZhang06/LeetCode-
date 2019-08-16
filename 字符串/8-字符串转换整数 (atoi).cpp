@@ -29,7 +29,7 @@ int myAtoi(string str)
 	{
 		if(base>INT_MAX/10 || (base==INT_MAX/10 && str[i]-'0'>7))
 			return sign==1?INT_MAX:INT_MIN;
-		base = 10*base+str[i++]-'0';
+		base = 10*base+(str[i++]-'0');
 	}
 	return sign*base;
 }
