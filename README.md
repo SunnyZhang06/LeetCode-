@@ -10,7 +10,7 @@
 - [树、二叉树、BST](http://uee.me/aX96G)
 - [字符串](http://uee.me/aX96H)
 - [哈希表](http://uee.me/aX96J)
-- [数组与矩阵]()
+- [数组与矩阵](http://uee.me/aX9A5)
 - [位运算](http://uee.me/aX96P)
 
 ### 算法相关
