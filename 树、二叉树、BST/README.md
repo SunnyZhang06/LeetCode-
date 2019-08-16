@@ -1,5 +1,6 @@
 ### 目录
 
+- [94-二叉树的中序遍历](http://uee.me/aX95f)（medium）
 - [98-验证二叉搜索树](http://uee.me/aX95f)（medium）
 - [100-相同的树](http://uee.me/aX95g)（easy）
 - [101-对称二叉树](http://uee.me/aX95h)（easy）
