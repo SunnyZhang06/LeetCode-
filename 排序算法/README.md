@@ -33,8 +33,11 @@
 
 ### 目录
 
-- [8-字符串转换整数](http://uee.me/aX95f)（medium）
-- [14-最长公共前缀](http://uee.me/aX95g)（easy）
-- [58-最后一个单词的长度](http://uee.me/aX95h)（easy）
-- [67-二进制求和](http://uee.me/aX95j)（easy）
+- [1-直接插入&&希尔排序](http://rrd.me/ekRjG)
+- [2-简单选择&&堆排序](http://rrd.me/ekRjH)
+- [3-冒泡排序&&快速排序](http://rrd.me/ekRjJ)
+- [4-归并排序](http://rrd.me/ekRjK)
+
+
+
 
