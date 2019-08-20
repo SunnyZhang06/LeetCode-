@@ -15,7 +15,16 @@
 	- 桶排序
 	- 基数排序
 
-        
+### 排序算法性能对比分析
+
+![表1-1](https://i.imgur.com/m6zKDEI.png)
+
+图中名词说明：<br>
+- n: 数据规模<br>
+- k: “桶”的个数<br>
+- In-place: 占用常数内存，不占用额外内存<br>
+- Out-place: 占用额外内存
+    
 ### 参考
 1、[https://blog.csdn.net/opooc/article/details/80994353](https://blog.csdn.net/opooc/article/details/80994353)<br>
 2、[https://blog.csdn.net/hellozhxy/article/details/79911867](https://blog.csdn.net/hellozhxy/article/details/79911867)<br>
