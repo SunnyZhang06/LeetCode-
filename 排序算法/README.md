@@ -1,13 +1,29 @@
+### 基础知识
+
+十大排序算法分类：
+十大排序算法分类：
+				|插入排序类：直接插入:将一个记录插入到已经排好序的有序表中
+				|			 希尔排序：跳跃分割，局部基本有序
+				|选择排序类：简单选择排序:找到合适的关键字再交换
+	比较类排序	|			 堆排序:
+				|交换排序类：冒泡排序：外循环次数，内循环趟数
+				|			 快速排序：一分为二，一大一小
+				|归并排序类：两路归并：假定待排序表含有n个记录，则可以视为n个有序的子表，每个子表长度为1，然后两两归并
+							 多路归并：
+							
+				|计数排序
+	非比较排序	|桶排序      https://blog.csdn.net/sb985/article/details/79921571
+				|基数排序
+        
+### 参考
+1、[https://blog.csdn.net/opooc/article/details/80994353](https://blog.csdn.net/opooc/article/details/80994353)
+2、[https://blog.csdn.net/hellozhxy/article/details/79911867](https://blog.csdn.net/hellozhxy/article/details/79911867)
+3、[https://blog.csdn.net/sb985/article/details/79921571](https://blog.csdn.net/sb985/article/details/79921571)
+
 ### 目录
 
 - [8-字符串转换整数](http://uee.me/aX95f)（medium）
 - [14-最长公共前缀](http://uee.me/aX95g)（easy）
 - [58-最后一个单词的长度](http://uee.me/aX95h)（easy）
 - [67-二进制求和](http://uee.me/aX95j)（easy）
-- [125-验证回文串](http://uee.me/aX95k)（easy）
-- [151-翻转字符串里的单词](http://uee.me/aX95m)（medium）
-- [344-翻转字符串](http://uee.me/aX95n)（easy）
-- [434-字符串中的单词数](http://uee.me/aX95p)（easy）
-- [459-重复的子字符串](http://uee.me/aX95q)（easy）
-
 
