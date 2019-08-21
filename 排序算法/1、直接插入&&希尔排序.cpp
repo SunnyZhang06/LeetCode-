@@ -1,34 +1,41 @@
 /*
 * @author：sunny
-* 459、重复的子字符串
-* https://leetcode-cn.com/problems/repeated-substring-pattern/
-* 给定一个非空的字符串，判断它是否可以由它的一个子串重复多次构成。给定的字符串只含有小写英文字母，并且长度不超过10000。
-*/	
-
-/*
-* 思路：既然能拆分成多个子串，那么每个子串的长度肯定不能大于原字符串长度的一半，那么可以从原字符串长度的一半遍历到1，
-*   如果当前长度能被总长度整除，说明可以分成若干个子字符串，然后将这些子字符串拼接起来看跟原字符串是否相等。 如果拆完了都不相等，返回false。
+* Description：排序算法总结
+* Content：1-直接插入、2-希尔排序
 */
 
- bool repeatedSubstringPattern(string s) 
- {
-	int n=s.size();
-	for(int i=n/2;i>=1;i--)//从1~n/2长度的字串开始，找长度能被总长度整除的字串
+/**直接插入**/
+
+void InsertSort(int *a,int N)
+{
+	for(int i=1;i<N;++i)  
 	{
-		if(n%i==0)
+		if(a[i]<a[i-1])//需要插入(因为前面已有序)
 		{
-			int c=n/i;//由子串重复c次构成
-			string t="";
-			for(int j=0;j<c;j++)
-				t+=s.substr(0,i);
-			if(s==t)
-				return true;
-		}            
-	}
-	return false;         
- }
+			int temp=a[i];
+			for(int j=i-1;j>=0 && a[j]>temp;--j)
+				a[j+1]=a[j];//往后移动
+			a[j+1]=temp;
+		}
+	}	
+}
 
+/**希尔排序**/
 
-
-
-
+void HillSort(int *a,int N)
+{
+	int dk;
+	for(dk=N/2;dk>=1;dk/=2)
+	{
+		for(int i=dk;i<N;++i)  
+		{
+			if(a[i]<a[i-dk])//需要插入(因为前面已有序)
+			{
+				int temp=a[i];
+				for(int j=i-dk;j>=0 && a[j]>temp;j-=dk)
+					a[j+dk]=a[j];//往后移动
+				a[j+dk]=temp;
+			}
+		}
+	}	
+}
