@@ -1,34 +1,50 @@
 /*
 * @author：sunny
-* 459、重复的子字符串
-* https://leetcode-cn.com/problems/repeated-substring-pattern/
-* 给定一个非空的字符串，判断它是否可以由它的一个子串重复多次构成。给定的字符串只含有小写英文字母，并且长度不超过10000。
-*/	
-
-/*
-* 思路：既然能拆分成多个子串，那么每个子串的长度肯定不能大于原字符串长度的一半，那么可以从原字符串长度的一半遍历到1，
-*   如果当前长度能被总长度整除，说明可以分成若干个子字符串，然后将这些子字符串拼接起来看跟原字符串是否相等。 如果拆完了都不相等，返回false。
+* Description：排序算法总结
+* Content：1-冒泡排序、2-快速排序
 */
 
- bool repeatedSubstringPattern(string s) 
- {
-	int n=s.size();
-	for(int i=n/2;i>=1;i--)//从1~n/2长度的字串开始，找长度能被总长度整除的字串
+/**冒泡排序**/
+
+void BubbleSort(int *a,int N)
+{
+	for(int i=0;i<N-1;++i)   //外循环次数
 	{
-		if(n%i==0)
+		for(int j=0;j<N-1-i;++j)//内循环趟数
 		{
-			int c=n/i;//由子串重复c次构成
-			string t="";
-			for(int j=0;j<c;j++)
-				t+=s.substr(0,i);
-			if(s==t)
-				return true;
-		}            
+			if(a[j]>a[j+1])
+				swap(a[j],a[j+1]);
+		}
+	}	
+}
+
+/**快速排序**/
+
+void QuickSort(int *a,int low,int high)
+{
+	int pivot;
+	if(low<high)
+	{
+		pivot=Partion(a,low,high);//一次分治，找出枢轴值位置，将数组一分为二
+		QuickSort(a,low,pivot-1);
+		QuickSort(a,pivot+1,high);
 	}
-	return false;         
- }
+}
 
-
-
-
+//将选取的pivotkey不断交换，将比他小的换到它的左边，比他大的换到右边，在交换中不断变换自己的位置
+int Partion(int *a,int low,int high)
+{
+	int pivotkey=a[low];//用子表的第一个值作枢轴
+	while(low<high)
+	{
+		while(low<high && a[high]>pivotkey)
+			--high;
+		swap(a[low],a[high]);
+		
+		while(low<high && a[low]<pivotkey)
+			++low;
+		swap(a[low],a[high]);
+	}
+	return low;//返回枢轴所在位置
+}
 
