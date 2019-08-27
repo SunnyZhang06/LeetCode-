@@ -1,32 +1,40 @@
 /*
 * @author：sunny
-* 459、重复的子字符串
-* https://leetcode-cn.com/problems/repeated-substring-pattern/
-* 给定一个非空的字符串，判断它是否可以由它的一个子串重复多次构成。给定的字符串只含有小写英文字母，并且长度不超过10000。
-*/	
-
-/*
-* 思路：既然能拆分成多个子串，那么每个子串的长度肯定不能大于原字符串长度的一半，那么可以从原字符串长度的一半遍历到1，
-*   如果当前长度能被总长度整除，说明可以分成若干个子字符串，然后将这些子字符串拼接起来看跟原字符串是否相等。 如果拆完了都不相等，返回false。
+* Description：排序算法总结
+* Content：归并排序
 */
 
- bool repeatedSubstringPattern(string s) 
- {
-	int n=s.size();
-	for(int i=n/2;i>=1;i--)//从1~n/2长度的字串开始，找长度能被总长度整除的字串
+/**归并排序**/
+
+void MergeSort(int *a, int low, int high)
+{
+	if(low<high)
 	{
-		if(n%i==0)
-		{
-			int c=n/i;//由子串重复c次构成
-			string t="";
-			for(int j=0;j<c;j++)
-				t+=s.substr(0,i);
-			if(s==t)
-				return true;
-		}            
+		int mid=(low+high)/2;    //从中间划分两个子序列
+		MergeSort(a, low, mid);  //对左侧子序列进行递归排序
+		MergeSort(a, mid+1, high);//对右侧子序列进行递归排序
+		merge(a, low, mid, high);//将前后相邻的两个有序表合并为一个有序表
 	}
-	return false;         
- }
+}
+
+void merge(int *a,int low, int mid, int high)
+{
+	int i,j,k;
+	int b[high+1]={0};//辅助空间
+	for(k=low; k<=high; k++)//将a中所有元素复制到b中
+		b[k]=a[k];
+	for(i=low, j=mid+1,k=i;i<=mid&&j<=high;k++)
+	{
+		if(b[i]<b[j]) //比较b的左右两段中的元素，将较小值复制到a中
+			a[k]=b[i++];
+		else
+			a[k]=b[j++];
+	}
+	while(i<=mid)     //若第一个表未检测完，复制
+		a[k++]=b[i++];
+	while(j<=high)    //若第二个表未检测完，复制
+		a[k++]=b[j++];	
+}
 
 
 
