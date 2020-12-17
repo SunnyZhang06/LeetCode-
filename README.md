@@ -4,18 +4,18 @@
 
 ### 数据结构相关 
 
-- [链表](http://uee.me/aX96D)
-- [栈和队列](http://uee.me/aX96E)
-- [堆的应用](http://uee.me/aX96F)
-- [树、二叉树、BST](http://uee.me/aX96G)
-- [字符串](http://uee.me/aX96H)
-- [哈希表](http://uee.me/aX96J)
-- [数组与矩阵](http://uee.me/aX9A5)
-- [位运算](http://uee.me/aX96P)
+- 链表
+- 栈和队列
+- 堆的应用
+- 树、二叉树、BST
+- 字符串
+- 哈希表
+- 数组与矩阵
+- 位运算
 
 ### 算法相关
 
-- [排序算法](http://rrd.me/ekRmV)
+- 排序算法
 - 二分查找
 - 贪心思想
 - 分治思想
